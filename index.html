@@ -192,7 +192,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-05-23 17:09:12 / 修改时间：17:50:41" itemprop="dateCreated datePublished" datetime="2020-05-23T17:09:12+08:00">2020-05-23</time>
+              <time title="创建时间：2020-05-23 17:09:12 / 修改时间：18:05:06" itemprop="dateCreated datePublished" datetime="2020-05-23T17:09:12+08:00">2020-05-23</time>
             </span>
 
           <br>
@@ -201,7 +201,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>614</span>
+              <span>625</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -220,26 +220,29 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>​        圣杯布局跟双飞翼布局的目的：两者都是为了实现左右两栏固定宽度，中间部分自适应，但是两者在实现中间栏内容不被遮挡的方式略有不同。</p>
-<p>​        圣杯布局：</p>
+          <pre><code>圣杯布局跟双飞翼布局的目的：两者都是为了实现左右两栏固定宽度，中间部分自适应，但是两者在实现中间栏内容不被遮挡的方式略有不同。
+
+圣杯布局：</code></pre><p>“`HTML</p>
 <div class="g-container">
     <div class="main">中</div>
     <div class="left">左< /div>
     <div class="right">右</div>
 </div>
+"`
 
 <p>1.三者都设置向左浮动。<br>2.设置main宽度为100%。<br>3.设置负边距，left设置负左边距为100%，right设置负左边距为负的自身宽度。<br>4.设置g-container的padding值给左右两栏留出空间。<br>5.设置左右两栏为相对定位，左边的left值为负的左边宽度, 右边的right值为负的右边宽度。</p>
 <p>不足：但是圣杯布局有个问题，当面板的中间栏比左右两栏宽度小的时候，布局就会乱掉。因此也就有了双飞翼布局来克服这个问题。如果不增加任何标签,想实现更完美的布局非常困难，因此双飞翼布局在主面板上选择了添加一个标签。</p>
-<p>​        双飞翼布局：</p>
+<p>双飞翼布局：<br>“`HTML</p>
 <div class="g-main">
     <div class="g-container">中</div>
 </div>
 <div class="left">左</div>
 <div class="right">右</div>
+"`
 
 <p>1.三者都设置向左浮动。2.设置g-container宽度为100%。<br>3.设置负外边距margin，left设置负左边距为100%，right设置负左边距为负的自身宽度。<br>4.设置g-container的margin值给左右两栏留出空间，防止遮挡中间内容。</p>
-<p>对比两者可以发现，双~ 飞翼布局与圣杯布局的主要差别在于:</p>
-<p>1.双飞翼布局给主面板添加了一个父标签用来通过margin给子面板腾出空间。<br>2.圣杯采用的是padding,而双飞K翼采用的margin,解决了圣杯布局的问题。<br>3.双飞翼布局不用设置相对布局，以及对应的left和right值。</p>
+<p>对比两者可以发现，双飞翼布局与圣杯布局的主要差别在于:</p>
+<p>1.双飞翼布局给主面板添加了一个父标签用来通过margin给子面板腾出空间。<br>2.圣杯采用的是padding,而双飞翼采用的margin,解决了圣杯布局的问题。<br>3.双飞翼布局不用设置相对布局，以及对应的left和right值。</p>
 </div>
       
     </div>
