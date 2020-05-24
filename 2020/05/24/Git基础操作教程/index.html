@@ -20,23 +20,23 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="1 Git 是什么Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也可以在任何时间点，将更新记录恢复回来。">
+  <meta name="description" content="title: Git基础操作教程date: 2020-05-24 09:50:57categories: Gittags:  Git Github  1 Git 是什么Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也可以在任何时间点，将更新记录恢复回来。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git基础操作教程">
 <meta property="og:url" content="http://yoursite.com/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="梦醒时分">
-<meta property="og:description" content="1 Git 是什么Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也可以在任何时间点，将更新记录恢复回来。">
+<meta property="og:description" content="title: Git基础操作教程date: 2020-05-24 09:50:57categories: Gittags:  Git Github  1 Git 是什么Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也可以在任何时间点，将更新记录恢复回来。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/Git%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
 <meta property="og:image" content="http://yoursite.com/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/Git%E5%AE%89%E8%A3%85.png">
 <meta property="og:image" content="http://yoursite.com/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/Git%E5%9F%BA%E6%9C%AC%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.png">
 <meta property="og:image" content="http://yoursite.com/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/git%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BB%93%E5%BA%93.png">
 <meta property="og:image" content="http://yoursite.com/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF.png">
-<meta property="article:published_time" content="2020-05-24T01:50:57.000Z">
-<meta property="article:modified_time" content="2020-05-24T03:42:18.768Z">
+<meta property="og:image" content="http://yoursite.com/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/pushgithub.png">
+<meta property="article:published_time" content="2020-05-24T01:50:58.014Z">
+<meta property="article:modified_time" content="2020-05-24T07:29:37.801Z">
 <meta property="article:author" content="Liuwei">
-<meta property="article:tag" content="Git">
-<meta property="article:tag" content="Github">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/Git%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
 
@@ -202,16 +202,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-05-24 09:50:57 / 修改时间：11:42:18" itemprop="dateCreated datePublished" datetime="2020-05-24T09:50:57+08:00">2020-05-24</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
-                </span>
+              <time title="创建时间：2020-05-24 09:50:58 / 修改时间：15:29:37" itemprop="dateCreated datePublished" datetime="2020-05-24T09:50:58+08:00">2020-05-24</time>
             </span>
 
           
@@ -227,14 +218,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.2k</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -246,7 +237,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="1-Git-是什么"><a href="#1-Git-是什么" class="headerlink" title="1 Git 是什么"></a>1 Git 是什么</h4><p>Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也可以在任何时间点，将更新记录恢复回来。</p>
+        <p>title: Git基础操作教程<br>date: 2020-05-24 09:50:57<br>categories: Git<br>tags:</p>
+<ul>
+<li>Git</li>
+<li>Github</li>
+</ul>
+<h4 id="1-Git-是什么"><a href="#1-Git-是什么" class="headerlink" title="1 Git 是什么"></a>1 Git 是什么</h4><p>Git是一个版本管理控制系统（缩写VCS），它可以在任何时间点，将文档的状态作为更新记录保存起来，也可以在任何时间点，将更新记录恢复回来。</p>
 <a id="more"></a>
 
 <p><img src="/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/Git%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt></p>
@@ -312,14 +308,37 @@
 <li><code>git branch 分支名称</code> 创建分支</li>
 <li><code>git checkout 分支名称</code> 切换分支</li>
 <li><code>git merge 来源分支</code> 合并分支</li>
-<li><code>git branch -d 分支名称</code> 删除分支（分支被合并后才允许删除）（-D 强制删除）</li>
+<li><code>git branch -d 分支名称</code> 删除分支</li>
 </ul>
+<p><strong>注意</strong>：分支被合并后才允许删除，但也可通过<code>git branch -D 分支名称</code> 强制删除</p>
 <h4 id="6-暂时保存更改"><a href="#6-暂时保存更改" class="headerlink" title="6 暂时保存更改"></a>6 暂时保存更改</h4><p>在git中，可以暂时提取分支上所有的改动并存储，让开发人员得到一个干净的工作副本，临时转向其他工作。</p>
 <p>使用场景：分支临时切换</p>
 <ul>
 <li>存储临时改动：<code>git stash</code></li>
 <li>恢复改动：<code>git stash pop</code></li>
 </ul>
+<h4 id="7-使用GitHub远程仓库"><a href="#7-使用GitHub远程仓库" class="headerlink" title="7 使用GitHub远程仓库"></a>7 使用GitHub远程仓库</h4><h5 id="7-1-注册github账户"><a href="#7-1-注册github账户" class="headerlink" title="7.1 注册github账户"></a>7.1 注册github账户</h5><p>打开官网 <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> 首页，点击 Sign up 按照提示注册账号。</p>
+<h5 id="7-2-创建仓库"><a href="#7-2-创建仓库" class="headerlink" title="7.2 创建仓库"></a>7.2 创建仓库</h5><p>进入github个人中心，点击加号然后选择<code>New repository</code>创建一个仓库。</p>
+<p><img src="/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt></p>
+<h5 id="7-3-将本地仓库推送到远程仓库"><a href="#7-3-将本地仓库推送到远程仓库" class="headerlink" title="7.3 将本地仓库推送到远程仓库"></a>7.3 将本地仓库推送到远程仓库</h5><p>如果你没勾选生成初始化<code>README</code>文档，那么在仓库的页面中，我们可以看到这样的信息</p>
+<p><img src="/2020/05/24/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%95%99%E7%A8%8B/pushgithub.png" alt></p>
+<p>可以看到有三种方法将本地仓库推送到远程仓库。</p>
+<p>由于<code>git init</code> <code>git add</code> <code>git commit</code>这三个命令我们已经执行过了。然后我们只要执行最后的两条命令即可将项目上传至<code>Github</code>上，直接复制下来，在 Git 窗口中粘贴执行就行了。</p>
+<h5 id="7-5-git推送远程仓库命令"><a href="#7-5-git推送远程仓库命令" class="headerlink" title="7.5 git推送远程仓库命令"></a>7.5 git推送远程仓库命令</h5><ol>
+<li><p>git push 远程仓库地址 分支名称</p>
+</li>
+<li><p>git remote add 远程仓库地址别名 远程仓库地址</p>
+</li>
+<li><p>git push 远程仓库地址别名 分支名称</p>
+</li>
+<li><p>git push -u 远程仓库地址别名 分支名称</p>
+<p>-u 记住推送地址及分支，下次推送只需要输入git push即可</p>
+</li>
+</ol>
+<h5 id="7-6-克隆仓库"><a href="#7-6-克隆仓库" class="headerlink" title="7.6 克隆仓库"></a>7.6 克隆仓库</h5><p>克隆远端数据仓库到本地：<code>git clone 仓库地址</code></p>
+<h5 id="7-7-拉取远程仓库中最新的版本"><a href="#7-7-拉取远程仓库中最新的版本" class="headerlink" title="7.7 拉取远程仓库中最新的版本"></a>7.7 拉取远程仓库中最新的版本</h5><p>拉取远程仓库中最新的版本：<code>git pull 远程仓库地址 分支名称</code></p>
+<p><strong>以上就是Git的基础操作内容啦，感谢观看~</strong></p>
+<p><strong>高级的操作以及多人协作开发以后再更新吧，学会这些你就已经可以满足日常开发的需求啦~</strong></p>
 
     </div>
 
@@ -355,10 +374,6 @@
 
 
       <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
-              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
-          </div>
 
         
 
@@ -428,7 +443,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Git-是什么"><span class="nav-number">1.</span> <span class="nav-text">1 Git 是什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Git下载安装"><span class="nav-number">2.</span> <span class="nav-text">2 Git下载安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Git-基本工作流程"><span class="nav-number">3.</span> <span class="nav-text">3 Git 基本工作流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Git-的使用"><span class="nav-number">4.</span> <span class="nav-text">4 Git 的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-Git-使用前配置"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 Git 使用前配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2-提交步骤"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 提交步骤</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-撤销"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 撤销</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-Git分支"><span class="nav-number">5.</span> <span class="nav-text">5 Git分支</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#5-1-分支细分"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 分支细分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-2-分支命令"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 分支命令</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-暂时保存更改"><span class="nav-number">6.</span> <span class="nav-text">6 暂时保存更改</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Git-是什么"><span class="nav-number">1.</span> <span class="nav-text">1 Git 是什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Git下载安装"><span class="nav-number">2.</span> <span class="nav-text">2 Git下载安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Git-基本工作流程"><span class="nav-number">3.</span> <span class="nav-text">3 Git 基本工作流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Git-的使用"><span class="nav-number">4.</span> <span class="nav-text">4 Git 的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-Git-使用前配置"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 Git 使用前配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2-提交步骤"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 提交步骤</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-撤销"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 撤销</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-Git分支"><span class="nav-number">5.</span> <span class="nav-text">5 Git分支</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#5-1-分支细分"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 分支细分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-2-分支命令"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 分支命令</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-暂时保存更改"><span class="nav-number">6.</span> <span class="nav-text">6 暂时保存更改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-使用GitHub远程仓库"><span class="nav-number">7.</span> <span class="nav-text">7 使用GitHub远程仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#7-1-注册github账户"><span class="nav-number">7.1.</span> <span class="nav-text">7.1 注册github账户</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-2-创建仓库"><span class="nav-number">7.2.</span> <span class="nav-text">7.2 创建仓库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-3-将本地仓库推送到远程仓库"><span class="nav-number">7.3.</span> <span class="nav-text">7.3 将本地仓库推送到远程仓库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-5-git推送远程仓库命令"><span class="nav-number">7.4.</span> <span class="nav-text">7.5 git推送远程仓库命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-6-克隆仓库"><span class="nav-number">7.5.</span> <span class="nav-text">7.6 克隆仓库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-7-拉取远程仓库中最新的版本"><span class="nav-number">7.6.</span> <span class="nav-text">7.7 拉取远程仓库中最新的版本</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -451,13 +466,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -500,7 +515,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2 分钟</span>
+    <span title="站点阅读时长">3 分钟</span>
 </div>
 
         
