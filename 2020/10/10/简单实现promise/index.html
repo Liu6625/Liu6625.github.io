@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Promise允许我们通过链式调用的方式来解决“回调地狱”的问题，特别是在异步过程中，通过Promise可以保证代码的整洁性和可读性，简单实现一个Promise.">
+  <meta name="description" content="Promise允许我们通过链式调用的方式来解决“回调地狱”的问题，特别是在异步过程中，通过Promise可以保证代码的整洁性和可读性，本文主要解读下promise，并且简单实现一个Promise.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简单实现promise">
 <meta property="og:url" content="http://yoursite.com/2020/10/10/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0promise/index.html">
 <meta property="og:site_name" content="流微の博客">
-<meta property="og:description" content="Promise允许我们通过链式调用的方式来解决“回调地狱”的问题，特别是在异步过程中，通过Promise可以保证代码的整洁性和可读性，简单实现一个Promise.">
+<meta property="og:description" content="Promise允许我们通过链式调用的方式来解决“回调地狱”的问题，特别是在异步过程中，通过Promise可以保证代码的整洁性和可读性，本文主要解读下promise，并且简单实现一个Promise.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-10T07:08:28.000Z">
-<meta property="article:modified_time" content="2020-10-10T08:43:41.721Z">
+<meta property="article:modified_time" content="2020-10-10T08:46:42.158Z">
 <meta property="article:author" content="Liuwei">
 <meta property="article:tag" content="Promise">
 <meta property="article:tag" content="ES6">
@@ -197,7 +197,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-10-10 15:08:28 / 修改时间：16:43:41" itemprop="dateCreated datePublished" datetime="2020-10-10T15:08:28+08:00">2020-10-10</time>
+              <time title="创建时间：2020-10-10 15:08:28 / 修改时间：16:46:42" itemprop="dateCreated datePublished" datetime="2020-10-10T15:08:28+08:00">2020-10-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -245,7 +245,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Promise允许我们通过链式调用的方式来解决“回调地狱”的问题，特别是在异步过程中，通过Promise可以保证代码的整洁性和可读性，简单实现一个Promise.</p>
+        <p>Promise允许我们通过链式调用的方式来解决“回调地狱”的问题，特别是在异步过程中，通过Promise可以保证代码的整洁性和可读性，本文主要解读下promise，并且简单实现一个Promise.</p>
 <a id="more"></a>
 
 <h4 id="什么是promise？"><a href="#什么是promise？" class="headerlink" title="什么是promise？"></a>什么是promise？</h4><ul>
