@@ -28,9 +28,9 @@
 <meta property="og:description" content="最近因为在实习工作需要展示大量的数据，于是便学习了ECharts用于展示图表数据，但是每生成一个图表需要进行大量重复的操作，于是我便想到基于ECharts封装一些常用的图表组件。本文用于记录如何在Vue项目中使用ECharts图表，并将其封装成能够复用的组件。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/2021/04/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1echarts%E5%9B%BE%E8%A1%A8%E5%B0%81%E8%A3%85%E6%88%90Vue%E7%BB%84%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/Demo%E9%A1%B5%E9%9D%A2%E6%95%88%E6%9E%9C%E4%B8%80.png">
-<meta property="og:image" content="http://yoursite.com/2021/04/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1echarts%E5%9B%BE%E8%A1%A8%E5%B0%81%E8%A3%85%E6%88%90Vue%E7%BB%84%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/Demo%E9%A1%B5%E9%9D%A2%E6%95%88%E6%9E%9C%E5%9B%BE%E4%BA%8C.png">
+<meta property="og:image" content="http://yoursite.com/2021/04/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1echarts%E5%9B%BE%E8%A1%A8%E5%B0%81%E8%A3%85%E6%88%90Vue%E7%BB%84%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/Demo%E9%A1%B5%E9%9D%A2%E6%95%88%E6%9E%9C%E4%BA%8C.png">
 <meta property="article:published_time" content="2021-04-05T08:27:34.000Z">
-<meta property="article:modified_time" content="2021-04-06T06:37:13.624Z">
+<meta property="article:modified_time" content="2021-04-06T06:48:18.876Z">
 <meta property="article:author" content="Liuwei">
 <meta property="article:tag" content="ECharts">
 <meta property="article:tag" content="组件封装">
@@ -206,7 +206,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-06 14:37:13" itemprop="dateModified" datetime="2021-04-06T14:37:13+08:00">2021-04-06</time>
+                <time title="修改时间：2021-04-06 14:48:18" itemprop="dateModified" datetime="2021-04-06T14:48:18+08:00">2021-04-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -286,7 +286,7 @@
 <blockquote>
 <ol>
 <li>demo.vue 向 pie-chart.vue 传递一组个性化数据</li>
-<li>radar-chart.vue 通过 props 选项接收到数据</li>
+<li>pie-chart.vue 通过 props 选项接收到数据</li>
 <li>提炼接收到的数据，覆盖默认配置数据 option</li>
 <li>初始化图表</li>
 </ol>
@@ -302,7 +302,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; radar-chart.vue （子组件）</span><br><span class="line"></span><br><span class="line">    ready() &#123;</span><br><span class="line">            let vm &#x3D; this;</span><br><span class="line">            let dom &#x3D; document.getElementById(&#39;pie-chart&#39;);</span><br><span class="line"></span><br><span class="line">            vm.myChart &#x3D; echarts.init(dom);</span><br><span class="line"></span><br><span class="line">            &#x2F;&#x2F; 得到图例数据</span><br><span class="line">            vm.option.series[0].data &#x3D; vm.legendData;</span><br><span class="line"></span><br><span class="line">            vm.myChart &amp;&amp; vm.myChart.setOption(vm.option);</span><br><span class="line">        &#125;,</span><br></pre></td></tr></table></figure>
 
 <p><strong>Demo 页面效果图二：</strong></p>
-<p><img src="/2021/04/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1echarts%E5%9B%BE%E8%A1%A8%E5%B0%81%E8%A3%85%E6%88%90Vue%E7%BB%84%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/Demo%E9%A1%B5%E9%9D%A2%E6%95%88%E6%9E%9C%E5%9B%BE%E4%BA%8C.png" alt></p>
+<p><img src="/2021/04/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1echarts%E5%9B%BE%E8%A1%A8%E5%B0%81%E8%A3%85%E6%88%90Vue%E7%BB%84%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/Demo%E9%A1%B5%E9%9D%A2%E6%95%88%E6%9E%9C%E4%BA%8C.png" alt></p>
 <h1 id="细节优化与其他注意事项"><a href="#细节优化与其他注意事项" class="headerlink" title="细节优化与其他注意事项"></a>细节优化与其他注意事项</h1><blockquote>
 <p>以下代码均是基于已完成代码的修改和添加</p>
 </blockquote>
